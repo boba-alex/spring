@@ -1,7 +1,7 @@
-package mypackage.controller;
+package mypackage.topic.controller;
 
-import mypackage.entity.Topic;
-import mypackage.service.TopicService;
+import mypackage.topic.entity.Topic;
+import mypackage.topic.service.TopicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,9 +32,9 @@ public class TopicController {
 	}
 
 	@RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
-	public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
+	public void updateTopic(@RequestBody Topic topic) {
 
-		topicService.updateTopic(id, topic);
+		topicService.updateTopic(topic);
 	}
 
 	@RequestMapping(method = RequestMethod.DELETE, value = "/topics/{id}")

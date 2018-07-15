@@ -7,6 +7,7 @@
     <groupId>com.boba-alex</groupId>
     <artifactId>SpringBootQuickStartApp</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <!-- parent of our project -->
     <parent>
@@ -38,6 +39,11 @@
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
     </dependencies>

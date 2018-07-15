@@ -1,11 +1,10 @@
-package mypackage.service;
+package mypackage.topic.service;
 
-import mypackage.entity.Topic;
+import mypackage.topic.entity.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -31,7 +30,7 @@ public class TopicService {
 		topicRepository.save(topic);
 	}
 
-	public void updateTopic(String id, Topic topic) {
+	public void updateTopic(Topic topic) {
 
 		topicRepository.save(topic);
 	}

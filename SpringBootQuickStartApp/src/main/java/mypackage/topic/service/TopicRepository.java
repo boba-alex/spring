@@ -1,6 +1,6 @@
-package mypackage.service;
+package mypackage.topic.service;
 
-import mypackage.entity.Topic;
+import mypackage.topic.entity.Topic;
 import org.springframework.data.repository.CrudRepository;
 
 public interface TopicRepository extends CrudRepository<Topic, String> {
